@@ -1,0 +1,25 @@
+.about-img-header {
+    width: 100%;
+    max-height: 200px;
+}
+
+.aboutus-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    img {
+        width: 48%;
+        margin: 5px;
+    }
+
+    @media @phone {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+    }
+}

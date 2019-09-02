@@ -4,6 +4,11 @@
 
   .intro {
 
+    .img-header {
+      width: 100%;
+      border-radius: 10px;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -24,6 +29,24 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    img:hover {
+      .animate-me;
+    }
+
+    @media @phone {
+
+      img:nth-child(1) {
+        width: 100%;
+      }
+      img:nth-child(2) {
+        display: none;
+      }
+
+      img:nth-child(3) {
+        display: none;
+      }
     }
   }
 
@@ -46,6 +69,7 @@
     display: flex;
     justify-content: center;
 
+
     .walk-text {
       width: 50%;
 
@@ -57,7 +81,32 @@
         margin-bottom: 26px;
       }
 
+      .sign-up {
+        width: 600px;
+        height: 200px;
+        margin-bottom: 15px;
+
+        .type-message {
+          padding: 5px 0px 0px 5px;
+          height: 90%;
+          background: lightgray;
+        }
+
+        .email {
+          padding: 2px 0px 0px 5px;
+          margin-top: 1%;
+          height: 8%;
+          background: lightgray;
+        }
+
+        @media @phone {
+          display: none;
+        }
+
+      }
+
       .btn {
+        .button-style(@header-font-color; white; 10px)
       }
     }
 
@@ -69,6 +118,27 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+
+      img:hover {
+        .animate-me;
+      }
+    }
+
+    @media @phone {
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      padding: 15px;
+      margin-top: 30px;
+
+      .walk-text {
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      .walk-img {
+        width: 100%;
+        margin-left: 0%;
       }
     }
   }

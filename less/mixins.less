@@ -1,1 +1,67 @@
 // Mixins Here
+
+.centered-column-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-styles {
+    .centered-column-flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px double @nav-border;
+    background: @nav-bg;
+    font-style: @nav-font;
+}
+
+.nav-item-styles {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    @media @phone {
+        width: 75%;
+    }
+}
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    opacity: .5;
+}
+
+.button-style(@button-background; @button-font-color; @button-radius;) {
+    width: 80px;
+    text-align: center;
+    color: @button-font-color;
+    background: @button-background;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: @button-radius;
+
+    &:hover {
+        color: @button-background;
+        background: @button-font-color;
+        cursor: pointer;
+    }
+
+    @media @phone {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+//**********Animations**********//
+@keyframes scale-images {
+    to {
+        transform: scale(2);
+    }
+}
+.animate-me {
+    animation: scale-images 4s;
+    animation-fill-mode: forwards;
+}
