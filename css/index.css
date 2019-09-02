@@ -319,6 +319,7 @@ footer {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     padding: 15px;
+    margin-top: 30px;
   }
   .home .walk .walk-text {
     margin-top: 10px;
