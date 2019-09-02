@@ -38,6 +38,13 @@
   animation: scale-images 4s;
   animation-fill-mode: forwards;
 }
+.sign-up-form {
+  height: 200px;
+}
+.sign-up-form .type-message {
+  width: 95%;
+  background: grey;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -303,6 +310,27 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .sign-up {
+  width: 600px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+.home .walk .walk-text .sign-up .type-message {
+  padding: 5px 0px 0px 5px;
+  height: 90%;
+  background: lightgray;
+}
+.home .walk .walk-text .sign-up .email {
+  padding: 2px 0px 0px 5px;
+  margin-top: 1%;
+  height: 8%;
+  background: lightgray;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .sign-up {
+    display: none;
+  }
 }
 .home .walk .walk-text .btn {
   width: 80px;
