@@ -24,6 +24,11 @@
     width: 75%;
   }
 }
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  opacity: 0.5;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -197,6 +202,9 @@ nav {
   border: 1px double #F1F1F1;
   background: #F6F6F6;
   font-style: #454A59;
+  position: fixed;
+  top: 0;
+  opacity: 0.5;
 }
 .nav-div nav {
   width: 400px;
