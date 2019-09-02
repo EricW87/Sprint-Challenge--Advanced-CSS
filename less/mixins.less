@@ -1,5 +1,19 @@
 // Mixins Here
 
+.centered-column-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-styles {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px double @nav-border;
+    background: @nav-bg;
+    font-style: @nav-font;
+}
+
 .button-style(@button-background; @button-font-color; @button-radius;) {
     width: 80px;
     text-align: center;
