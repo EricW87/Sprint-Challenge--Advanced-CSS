@@ -38,13 +38,6 @@
   animation: scale-images 4s;
   animation-fill-mode: forwards;
 }
-.sign-up-form {
-  height: 200px;
-}
-.sign-up-form .type-message {
-  width: 95%;
-  background: grey;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -402,5 +395,6 @@ footer {
   }
   .aboutus-section img {
     width: 100%;
+    border-radius: 10px;
   }
 }
