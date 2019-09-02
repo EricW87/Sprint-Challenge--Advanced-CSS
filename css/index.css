@@ -29,6 +29,15 @@
   top: 0;
   opacity: 0.5;
 }
+@keyframes scale-images {
+  to {
+    transform: scale(2);
+  }
+}
+.animate-me {
+  animation: scale-images 4s;
+  animation-fill-mode: forwards;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -255,6 +264,10 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+.home .space-images img:hover {
+  animation: scale-images 4s;
+  animation-fill-mode: forwards;
+}
 @media (max-width: 500px) {
   .home .space-images img:nth-child(1) {
     width: 100%;
@@ -321,6 +334,10 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .walk-img img:hover {
+  animation: scale-images 4s;
+  animation-fill-mode: forwards;
 }
 @media (max-width: 500px) {
   .home .walk {
