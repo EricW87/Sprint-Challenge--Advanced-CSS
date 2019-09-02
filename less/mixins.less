@@ -7,11 +7,23 @@
 }
 
 .nav-styles {
+    .centered-column-flex;
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px double @nav-border;
     background: @nav-bg;
     font-style: @nav-font;
+}
+
+.nav-item-styles {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    @media @phone {
+        width: 75%;
+    }
 }
 
 .button-style(@button-background; @button-font-color; @button-radius;) {
@@ -28,5 +40,11 @@
         color: @button-background;
         background: @button-font-color;
         cursor: pointer;
+    }
+
+    @media @phone {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }

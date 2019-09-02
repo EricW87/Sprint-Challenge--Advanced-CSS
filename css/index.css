@@ -4,11 +4,25 @@
   align-items: center;
 }
 .nav-styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px double #F1F1F1;
   background: #F6F6F6;
   font-style: #454A59;
+}
+.nav-item-styles {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+@media (max-width: 500px) {
+  .nav-item-styles {
+    width: 75%;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -190,6 +204,11 @@ nav {
   justify-content: space-between;
   padding-top: 10px;
 }
+@media (max-width: 500px) {
+  .nav-div nav {
+    width: 75%;
+  }
+}
 .nav-div nav li {
   list-style-type: none;
 }
@@ -227,6 +246,17 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img:nth-child(1) {
+    width: 100%;
+  }
+  .home .space-images img:nth-child(2) {
+    display: none;
+  }
+  .home .space-images img:nth-child(3) {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -268,6 +298,13 @@ footer {
   background: white;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -276,4 +313,19 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .home .walk .walk-text {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0%;
+  }
 }
